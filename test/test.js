@@ -1,9 +1,14 @@
 var assert = require('assert');
+var ModulusMap = require('./../src/modulusmap.js')
 
-describe('Maths', function() {
+describe('#ModulusMap', function() {
 
-  it('2 + 2 = 4', function() {
-    assert.equal(2 + 2, 4);
+  describe('#Constructor', function() {
+
+    it('returns a function', function() {
+      assert.equal(typeof ModulusMap(), "function");
+    });
+
   });
 
 });
