@@ -1,0 +1,9 @@
+{
+  "name": "raindrops",
+  "dependencies": {
+    "mocha": "*"
+  },
+  "scripts": {
+    "test": "mocha"
+  }
+}
