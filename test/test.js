@@ -71,4 +71,29 @@ describe('#ModulusMap', function() {
 
   });
 
+  describe('Fizzbuzz scenario', function() {
+
+    FIZZBUZZ = {
+      3: 'fizz',
+      5: 'buzz',
+    }
+
+    let fizzbuzz = ModulusMap(FIZZBUZZ)
+
+    let tests = [
+      { input: 2, expected: 2 },
+      { input: 9, expected: 'fizz' },
+      { input: 10, expected: 'buzz' },
+      { input: 45, expected: 'fizzbuzz' },
+      { input: 98, expected: 98 }
+    ]
+
+    tests.forEach( function(test){
+      it(`fizzbuzz(${test.input}) == ${test.expected}`, function() {
+        assert.equal(fizzbuzz(test.input), test.expected);
+      })
+    })
+
+  });
+
 });
