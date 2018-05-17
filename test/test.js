@@ -45,4 +45,30 @@ describe('#ModulusMap', function() {
 
   });
 
+  describe('Raindrops scenario', function() {
+
+    RAINDROPS = {
+      3: 'Pling',
+      5: 'Plang',
+      7: 'Plong'
+    }
+
+    let raindrops = ModulusMap(RAINDROPS)
+
+    let tests = [
+      { input: 2, expected: 2 },
+      { input: 3, expected: 'Pling' },
+      { input: 10, expected: 'Plang' },
+      { input: 21, expected: 'PlingPlong' },
+      { input: 35, expected: 'PlangPlong' }
+    ]
+
+    tests.forEach( function(test){
+      it(`raindrops(${test.input}) == ${test.expected}`, function() {
+        assert.equal(raindrops(test.input), test.expected);
+      })
+    })
+
+  });
+
 });
