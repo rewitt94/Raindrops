@@ -11,4 +11,13 @@ describe('#ModulusMap', function() {
 
   });
 
+  describe('#Instance', function() {
+
+    it('returns input number when instantiated without parameters', function() {
+      number = ModulusMap()
+      assert.equal(number(1003), 1003);
+    });
+
+  });
+
 });

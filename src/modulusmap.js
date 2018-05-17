@@ -1,6 +1,8 @@
-function ModulusMap() {
+function ModulusMap(map) {
 
-  return () => {}
+  return (n) => {
+    return n
+  }
 
 }
 
