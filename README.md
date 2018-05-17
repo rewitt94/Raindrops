@@ -65,7 +65,7 @@ Some very simple testing done using Mocha.
 
 ### Conclusions:
 
-I'm uncertain whether 0 and negative numbers are edge cases need special treatment. I think I'll let Javascript decide what is or isn't a factor in this situation.
+I'm uncertain whether 0 and negative numbers are edge cases and need special treatment. I think I'll let Javascript decide what is or isn't a factor in this situation.
 
 > Afterall, Javascript rocks at Maths.
 >
