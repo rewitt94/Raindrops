@@ -18,6 +18,11 @@ describe('#ModulusMap', function() {
       assert.equal(number(1003), 1003);
     });
 
+    it('returns object value if input divides an object key', function() {
+      mapper = ModulusMap({2: 'hello'})
+      assert.equal(mapper(10), 'hello');
+    });
+
   });
 
 });
