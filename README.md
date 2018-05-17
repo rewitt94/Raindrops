@@ -16,7 +16,7 @@ Write a function that takes as its input a number (n) and converts it to a strin
 
 ### My Solution:
 
-This problem is a reiteration of fizzbuzz. I am writing a general solution that could be used for either raindrops or fizzbuzz. Of course, there are trade-offs for any such decision in code.
+This problem is a reiteration of fizzbuzz. I am writing a general solution that could be used for raindrops, fizzbuzz or something else. Of course, there are trade-offs for any such decision in code.
 
 >##### Pros:
 >
@@ -29,7 +29,7 @@ This problem is a reiteration of fizzbuzz. I am writing a general solution that 
 
 ### Examples:
 
-To instantiate the raindrops function.
+To instantiate the raindrops function:
 
 ```javascript
 
@@ -43,7 +43,7 @@ let raindrops = ModulusMap(RAINDROPS)
 
 ```
 
-To instantiate the fizzbuzz function (if you prefer the classics).
+To instantiate the fizzbuzz function (if you prefer the classics):
 
 
 ```javascript
@@ -65,8 +65,8 @@ Some very simple testing done using Mocha.
 
 ### Conclusions:
 
-It's a shame that 3 doesn't divide 7 and hence PlingPlangPlong is impossible; except for 0. Speak of the devil, I'm uncertain whether 0 and negative numbers are edge cases need special treatment. I think I'll let Javascript decide what is or isn't a factor in this situation.
+It's a shame that 3 doesn't divide 7 and hence PlingPlangPlong is impossible, except for 0. Speak of the devil, I'm uncertain whether 0 and negative numbers are edge cases need special treatment. I think I'll let Javascript decide what is or isn't a factor in this situation.
 
 > Afterall, Javascript rocks at Maths.
 >
-> '3' + 3 / 2 = 31.5
+> '3' + 3 / 2 = '31.5'
