@@ -60,6 +60,9 @@ describe('#ModulusMap', function() {
       { input: 3, expected: 'Pling' },
       { input: 10, expected: 'Plang' },
       { input: 21, expected: 'PlingPlong' },
+      { input: 28, expected: 'Plong' },
+      { input: 30, expected: 'PlingPlang' },
+      { input: 34, expected: 34 },
       { input: 35, expected: 'PlangPlong' }
     ]
 
