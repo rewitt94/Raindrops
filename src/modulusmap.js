@@ -1,12 +1,13 @@
 function ModulusMap(map) {
 
   return (n) => {
+    values = ''
     for (key in map) {
       if (n % key == 0) {
-        return map[key]
+        values += map[key]
       }
     }
-    return n
+    return values || n
   }
 
 }

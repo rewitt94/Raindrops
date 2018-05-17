@@ -33,6 +33,16 @@ describe('#ModulusMap', function() {
       assert.equal(mapper(21), 'pick me!');
     })
 
+    it('returns a concatnated string of object values if multiple object keys are factors of input', function() {
+      mapper = ModulusMap({2: 'hello', 3: 'world'})
+      assert.equal(mapper(6), 'helloworld');
+    })
+
+    it('values are concatnated by numeric order of key', function() {
+      mapper = ModulusMap({100: 'after', 10: 'before', 50: 'now',})
+      assert.equal(mapper(500), 'beforenowafter');
+    })
+
   });
 
 });
